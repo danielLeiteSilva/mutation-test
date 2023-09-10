@@ -9,5 +9,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: '11'
+      - name: "Show version"
+        run: "mvn --version"
       - name: "Execute Mutation"
         run: "mvn test-compile org.pitest:pitest-maven:mutationCoverage"
