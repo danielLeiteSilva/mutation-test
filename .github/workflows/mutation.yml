@@ -23,7 +23,7 @@ jobs:
             }
             console.log("Clear completed")
 
-  build:
+  mutation-test-v1:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
