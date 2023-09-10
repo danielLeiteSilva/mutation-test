@@ -35,7 +35,7 @@ jobs:
         uses: stCarolas/setup-maven@v4.5
         with:
           maven-version: 3.8.1
-      - name: "Show version"
-        run: "mvn --version"
+      - name: "Clean mvn"
+        run: "mvn clean install"
       - name: "Execute Mutation"
         run: "mvn test-compile org.pitest:pitest-maven:mutationCoverage"
