@@ -39,4 +39,4 @@ jobs:
       - name: "Clean mvn"
         run: "mvn --version"
       - name: "Execute Mutation"
-        run: "mvn org.pitest:pitest-maven:mutationCoverage"
+        run: "mvn test-compile org.pitest:pitest-maven:mutationCoverage"
