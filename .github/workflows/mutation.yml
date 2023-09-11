@@ -36,6 +36,8 @@ jobs:
         with:
           maven-version: 3.8.1
       - name: "Clean mvn"
+        run: "mvn --version"
+      - name: "Clean mvn"
         run: "mvn clean package"
       - name: "Execute Mutation"
         run: "mvn org.pitest:pitest-maven:mutationCoverage"
