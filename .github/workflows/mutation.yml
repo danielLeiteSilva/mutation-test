@@ -2,4 +2,4 @@ name: Mutation Test CI
 on: [push]
 jobs:
   mutation-test:
-    uses: danielLeiteSilva/reusable-workflows/.github/workflows/mutation.yml
+    uses: danielLeiteSilva/reusable-workflows/.github/workflows/mutation.yml@v1
