@@ -1,9 +1,13 @@
 name: Mutation Test CI
 on:
-  workflow_call: 
+  workflow_call:
+    inputs:
+      config-path:
+        required: true
+        type: string
+    secrets:
+      token:
+        required: true
 jobs:
-  clear-cache:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Called Mutation
-        uses: reusable-workflows/blob/main/.github/workflows/mutation.yml@main
+  mutation-test:
+    uses: reusable-workflows/blob/main/.github/workflows/mutation.yml@main
