@@ -6,4 +6,6 @@ public enum EspecialidadeENUM {
     CARDIOLOGIA,
     GINECOLOGIA,
     DERMATOLOGIA;
+
+    
 }
