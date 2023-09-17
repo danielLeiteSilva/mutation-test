@@ -1,13 +1,5 @@
 name: Mutation Test CI
-on:
-  workflow_call:
-    inputs:
-      config-path:
-        required: true
-        type: string
-    secrets:
-      token:
-        required: true
+on: [push]
 jobs:
   mutation-test:
     uses: reusable-workflows/blob/main/.github/workflows/mutation.yml@main
