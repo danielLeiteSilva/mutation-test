@@ -4,4 +4,4 @@ on:
     branches: [ main ]
 jobs:
   mutation-test:
-    uses: danielLeiteSilva/reusable-workflows/.github/workflows/mutation.yml@main
+    uses: reusable-workflows/.github/workflows/mutation.yml@main
