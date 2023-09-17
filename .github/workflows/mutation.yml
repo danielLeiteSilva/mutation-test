@@ -1,5 +1,6 @@
 name: Mutation Test CI
-on: [push]
+on:
+  workflow_call: 
 jobs:
   clear-cache:
     runs-on: ubuntu-latest
