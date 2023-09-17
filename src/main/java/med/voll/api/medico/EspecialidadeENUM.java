@@ -7,4 +7,6 @@ public enum EspecialidadeENUM {
     GINECOLOGIA,
     DERMATOLOGIA;
 
+
+
 }
